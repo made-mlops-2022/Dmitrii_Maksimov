@@ -15,7 +15,11 @@ Project Organization
     │   ├── predict        <- data for prediction
     │   └── raw            <- The original, immutable data dump.
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── predict            <- Model predictions
+    │
+    ├── metrics            <- Model summaries
+    │
+    ├── models             <- Trained and serialized models
     │
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
