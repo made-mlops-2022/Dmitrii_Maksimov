@@ -4,7 +4,7 @@ setup(
     name='src',
     packages=find_packages(),
     version='0.1.0',
-    description='First homework on MLOPS at the MADE',
+    description='1_Howerok on MLOPS at the MADE',
     author='Dmitrii Maksimov',
     license='',
 )
