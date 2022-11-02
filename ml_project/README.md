@@ -53,4 +53,3 @@ Project Organization
     │   ├── entities           <- Parameters
     │   │
     │   ├── train_pipeline.py, predict_pipeline.py           <- Scripts for prediction and training
-
