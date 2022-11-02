@@ -17,7 +17,7 @@ def predict_pipeline(predict_pipeline_params: PredictPipelineParams):
     data = read_data(predict_pipeline_params.input_data_path)
     logger.info(f"data.shape is {data.shape}")
 
-    model =  pickle.load(open(predict_pipeline_params.model_path, 'rb'))
+    model = pickle.load(open(predict_pipeline_params.model_path, 'rb'))
     predicts = predict_model(model, data)
     pd.DataFrame(predicts).to_csv(predict_pipeline_params.output_predict_path, index=False)
     logger.info(f"predictions are saved in {predict_pipeline_params.output_predict_path}")

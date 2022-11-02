@@ -20,7 +20,7 @@ def build_categorical_pipeline() -> Pipeline:
 
 def build_numerical_pipeline() -> Pipeline:
     num_pipeline = Pipeline(
-        [("impute", SimpleImputer(missing_values=np.nan, strategy="mean")),]
+        [("impute", SimpleImputer(missing_values=np.nan, strategy="mean"))]
     )
     return num_pipeline
 
