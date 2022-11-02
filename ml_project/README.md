@@ -3,6 +3,12 @@ ml_project
 
 1_Howerok on MLOPS at the MADE
 
+Setup: 
+~~~
+make create_environment
+make requirements
+~~~
+
 Project Organization
 ------------
 
@@ -48,7 +54,3 @@ Project Organization
     │   │
     │   ├── train_pipeline.py, predict_pipeline.py           <- Scripts for prediction and training
 
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
