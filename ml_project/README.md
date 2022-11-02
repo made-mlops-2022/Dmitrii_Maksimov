@@ -9,6 +9,35 @@ make create_environment
 make requirements
 ~~~
 
+Run train: 
+~~~
+python -m src.train_pipeline train=<config_name> <changes>
+example: 
+python -m src.train_pipeline train=train_config_svm train splitting_params.val_size=0.2
+~~~
+
+Run predict: 
+~~~
+python -m src.predict_pipeline predict=<config_name> <changes>
+example: 
+python -m src.predict_pipeline predict.model_path=models/model_svm.pkl
+~~~
+
+Run test: 
+~~~
+make test
+~~~
+
+Run lint: 
+~~~
+make lint
+~~~
+
+Run coverage: 
+~~~
+make coverage
+~~~
+
 Project Organization
 ------------
 
