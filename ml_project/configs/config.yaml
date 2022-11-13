@@ -1,0 +1,3 @@
+defaults:
+ - predict: predict_config
+ - train: train_config_rf
