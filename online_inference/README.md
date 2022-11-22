@@ -36,7 +36,7 @@ pytest
 
 ## Hostory of Docker image optimizing
 
-1. dmmaksimov/online_inference:v1  
+1. dmmaksimov/online_inference:v1
 ⋅⋅⋅Size 264.42 MB⋅⋅
 2. dmmaksimov/online_inference:v2
 ⋅⋅⋅--no-cache-dir flag has been added to pip install requirements⋅⋅
