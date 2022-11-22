@@ -34,7 +34,7 @@ pip install -r requirements.txt
 pytest
 ~~~
 
-## Hostory of Docker image optimizing
+## History of Docker image optimizing
 
 1. dmmaksimov/online_inference:v1  
 Size 264.42 MB
