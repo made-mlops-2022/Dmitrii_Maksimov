@@ -1,0 +1,29 @@
+input_data_path: "data/processed/{{ ds_nodash }}/train_data.csv"
+output_model_path: "data/models/{{ ds_nodash }}/model.pkl"
+metric_path: "data/metrics/{{ ds_nodash }}/metrics.json"
+train_params:
+  model_type: "RandomForestClassifier"
+splitting_params:
+  train_path: "data/processed/{{ ds_nodash }}/train/train.csv"
+  val_path: "data/processed/{{ ds_nodash }}/val/val.csv"
+  val_size: 0.3
+  random_state: 123
+feature_params:
+  categorical_features:
+    - "sex"
+    - "cp"
+    - "fbs"
+    - "restecg"
+    - "exang"
+    - "slope"
+    - "ca"
+    - "thal"
+  numerical_features:
+    - "age"
+    - "trestbps"
+    - "chol"
+    - "thalach"
+    - "oldpeak"
+  features_to_drop:
+    - "thal"
+  target_col: "condition"
