@@ -77,6 +77,17 @@ services:
     environment: *airflow_environment
     command: scheduler
 
+  ml_base:
+    build:
+      context: images/airflow-ml-base
+    image: airflow-ml-base
+    restart: "no"
+  
+  data_generation:
+    build:
+      context: images/airflow-data-generation
+    image: airflow-data-generation
+    restart: "no"
 
 volumes:
   logs:

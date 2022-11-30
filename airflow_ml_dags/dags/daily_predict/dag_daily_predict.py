@@ -19,11 +19,11 @@ dag_kwargs = {
     'default_args': DEFAULT_ARGS
 }
 
+model_path = Variable.get("model_path")
+
 with DAG(**dag_kwargs) as dag:
     start = DummyOperator(task_id='start')
     end = DummyOperator(task_id='end')
-
-    model_path = Variable.get("model_path")
 
     predict_data = PythonOperator(
         task_id='predict_data',

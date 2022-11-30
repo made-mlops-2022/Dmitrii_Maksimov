@@ -23,9 +23,9 @@ dag_kwargs = {
     'default_args': DEFAULT_ARGS
 }
 
-with DAG(**dag_kwargs) as dag:
-    params = read_training_pipeline_params(ML_CONFIG_PATH)
+params = read_training_pipeline_params(ML_CONFIG_PATH)
 
+with DAG(**dag_kwargs) as dag:
     start = DummyOperator(task_id='start')
     end = DummyOperator(task_id='end')
 
